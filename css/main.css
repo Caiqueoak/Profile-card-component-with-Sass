@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 375px;
+  width: 330px;
+  border-radius: 10px;
+}
+
+.container .profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  border-bottom: 1px white groove;
+}
+
+.container .profile-container .top-box {
+  background-image: url(../images/bg-pattern-card.svg);
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px 10px 0 0;
+}
+
+.container .profile-container .bottom-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 50%;
+}
+
+.container .profile-container .bottom-box .profile-name {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 15%;
+}
+
+.container .profile-container .bottom-box .profile-name .age-number {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container .profile-container .bottom-box .profile-name .country {
+  margin-top: 10px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container .profile-container .picture {
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.container .media-data {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  background-color: white;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0 0 10px 10px;
+}
+
+.container .media-data .media-names {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 7px;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+}
+/*# sourceMappingURL=main.css.map */

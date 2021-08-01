@@ -1,0 +1,19 @@
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+$Font-size: 18px; //name and stats
+$Font-family: 'Kumbh Sans', sans-serif;
+$profile-height: 80%;
+
+@mixin font-weight ($weight) {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: $weight;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
