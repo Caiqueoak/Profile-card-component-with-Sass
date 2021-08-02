@@ -1,18 +1,22 @@
 @import "variables";
 
 body {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 50px;
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
+  background-color: $Dark-cyan;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: -790px -550px, 130px 310px;
+  background-repeat: no-repeat;
 }
 
 .container {
-  height: 375px;
+  position: absolute;
+  height: 360px;
   width: 330px;
   border-radius: 10px;
 
@@ -24,14 +28,14 @@ body {
     align-items: center;
     width: 100%;
     height: $profile-height;
-    border-bottom: 1px white groove;
+    border-bottom: 1px solid rgb(228, 227, 227);
 
     .top-box {
       background-image: url(../images/bg-pattern-card.svg);
       position: relative;
       width: 100%;
       height: 50%;
-      border-radius: 10px 10px 0 0;
+      border-radius: 15px 15px 0 0;
     }
     .bottom-box {
       position: relative;
@@ -45,11 +49,16 @@ body {
       .profile-name {
         @include font-weight(700);
         margin-top: 15%;
+        font-size: 1.1rem;
 
         .age-number {
           @include font-weight(400);
+          color: grey;
+          padding-left: 3px;
         }
         .country {
+          color: grey;
+          font-size: 0.85rem;
           margin-top: 10px;
           @include font-weight(400);
         }
@@ -69,16 +78,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
 
     .media-names {
       @include font-weight(400);
-      font-size: 0.8rem;
+      color: grey;
+      font-size: 0.7rem;
       margin-top: 7px;
+      letter-spacing: 1px;
     }
   }
-}
-footer{
+  footer {
     position: absolute;
-    bottom: 5px;
+    bottom: -75px;
+    font-size: 0.8rem;
+    @include font-weight(700);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    background-position: -320px -550px, 640px 330px;
+  }
 }

@@ -6,18 +6,21 @@
 }
 
 body {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 50px;
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
+  background-color: #19a2ae;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: -790px -550px, 130px 310px;
+  background-repeat: no-repeat;
 }
 
 .container {
-  height: 375px;
+  position: absolute;
+  height: 360px;
   width: 330px;
   border-radius: 10px;
 }
@@ -29,8 +32,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80%;
-  border-bottom: 1px white groove;
+  height: 79%;
+  border-bottom: 1px solid #e4e3e3;
 }
 
 .container .profile-container .top-box {
@@ -38,7 +41,7 @@ body {
   position: relative;
   width: 100%;
   height: 50%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .container .profile-container .bottom-box {
@@ -55,14 +58,19 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 700;
   margin-top: 15%;
+  font-size: 1.1rem;
 }
 
 .container .profile-container .bottom-box .profile-name .age-number {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
+  color: grey;
+  padding-left: 3px;
 }
 
 .container .profile-container .bottom-box .profile-name .country {
+  color: grey;
+  font-size: 0.85rem;
   margin-top: 10px;
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
@@ -78,23 +86,36 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 700;
   background-color: white;
-  height: 20%;
+  height: 21%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 15px 15px;
 }
 
 .container .media-data .media-names {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  color: grey;
+  font-size: 0.7rem;
   margin-top: 7px;
+  letter-spacing: 1px;
 }
 
-footer {
+.container footer {
   position: absolute;
-  bottom: 5px;
+  bottom: -75px;
+  font-size: 0.8rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    background-position: -320px -550px, 640px 330px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
