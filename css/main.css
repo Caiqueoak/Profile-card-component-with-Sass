@@ -7,14 +7,15 @@
 
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 130vh;
-  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
   background-color: #19a2ae;
   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-  background-position: -790px -550px, 130px 310px;
+  background-position: right calc(52vw) bottom calc(30vh), left calc(47vw) top calc(52vh);
   background-repeat: no-repeat;
 }
 
@@ -26,11 +27,11 @@ body {
 }
 
 .container .profile-container {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
   width: 100%;
   height: 79%;
   border-bottom: 1px solid #e4e3e3;
@@ -45,10 +46,10 @@ body {
 }
 
 .container .profile-container .bottom-box {
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
   background-color: white;
   width: 100%;
   height: 50%;
@@ -57,6 +58,7 @@ body {
 .container .profile-container .bottom-box .profile-name {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 700;
+  color: #2d3248;
   margin-top: 15%;
   font-size: 1.1rem;
 }
@@ -64,12 +66,12 @@ body {
 .container .profile-container .bottom-box .profile-name .age-number {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
-  color: grey;
+  color: #6a6f81;
   padding-left: 3px;
 }
 
 .container .profile-container .bottom-box .profile-name .country {
-  color: grey;
+  color: #969696;
   font-size: 0.85rem;
   margin-top: 10px;
   font-family: 'Kumbh Sans', sans-serif;
@@ -85,11 +87,12 @@ body {
 .container .media-data {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   height: 21%;
   width: 100%;
-  display: flex;
-  align-items: center;
   justify-content: space-evenly;
   border-radius: 0 0 15px 15px;
 }
@@ -97,10 +100,16 @@ body {
 .container .media-data .media-names {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
-  color: grey;
+  color: #969696;
   font-size: 0.7rem;
   margin-top: 7px;
   letter-spacing: 1px;
+}
+
+.container .media-data .media-numbers {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  color: #2d3248;
 }
 
 .container footer {
@@ -111,11 +120,10 @@ body {
   font-weight: 700;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (max-width: 375px) {
   body {
-    height: 100vh;
-    overflow: hidden;
-    background-position: -320px -550px, 640px 330px;
+    height: 700px;
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
